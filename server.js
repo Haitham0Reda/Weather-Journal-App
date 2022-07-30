@@ -16,7 +16,7 @@ app.use(cors());
 // Initialize the main project folder
 app.use(express.static("website"));
 
-const port = 8080;
+const port = 9999;
 // Spin up the server
 const server = app.listen(port, listening);
 
