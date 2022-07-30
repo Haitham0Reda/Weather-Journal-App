@@ -43,4 +43,5 @@ function addData(req, res) {
   };
   console.log(req.body);
   projectData.push(newData);
+  // projectData.reset(newData);
 }
