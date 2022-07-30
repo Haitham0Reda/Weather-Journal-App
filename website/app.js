@@ -72,14 +72,17 @@ const UiData = async () => {
     console.log(allData);
     // update new entry values
     const newData = allData[allData.length - 1];
+    const newTemp = Math.round(newData.temp);
     if (
       newData.date !== undefined &&
-      newData.temp !== undefined &&
+      newTemp !== undefined &&
       newData.content !== undefined
     ) {
-      document.getElementById("date").innerHTML = newData.date;
-      document.getElementById("temp").innerHTML = newData.temp + " degree C";
-      document.getElementById("content").innerHTML = newData.content;
+      document.getElementById("date").innerHTML = `Date: ${newData.date}`;
+      document.getElementById("temp").innerHTML = `Temperature: ${newTemp}°C`;
+      document.getElementById(
+        "content"
+      ).innerHTML = `Feels: ${newData.content}`;
     }
   } catch (error) {
     console.log("error", error);
