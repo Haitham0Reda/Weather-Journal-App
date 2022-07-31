@@ -78,9 +78,9 @@ const UiData = async () => {
       allData.content !== undefined
     ) {
       document.getElementById("date").innerHTML = `Date: ${allData.date}`;
-      document.getElementById(
-        "temp"
-      ).innerHTML = `Temperature: ${Math.round(allData.temp)}°C`;
+      document.getElementById("temp").innerHTML = `Temperature: ${Math.round(
+        allData.temp
+      )}°C`;
       document.getElementById(
         "content"
       ).innerHTML = `Feels: ${allData.content}`;
