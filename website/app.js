@@ -71,18 +71,19 @@ const UiData = async () => {
     const allData = await request.json();
     console.log(allData);
     // update new entry values
-    const newData = allData[allData.length - 1];
-    const newTemp = Math.round(newData.temp);
+
     if (
-      newData.date !== undefined &&
-      newTemp !== undefined &&
-      newData.content !== undefined
+      allData.date !== undefined &&
+      allData.temp !== undefined &&
+      allData.content !== undefined
     ) {
-      document.getElementById("date").innerHTML = `Date: ${newData.date}`;
-      document.getElementById("temp").innerHTML = `Temperature: ${newTemp}°C`;
+      document.getElementById("date").innerHTML = `Date: ${allData.date}`;
+      document.getElementById(
+        "temp"
+      ).innerHTML = `Temperature: ${Math.round(allData.temp)}°C`;
       document.getElementById(
         "content"
-      ).innerHTML = `Feels: ${newData.content}`;
+      ).innerHTML = `Feels: ${allData.content}`;
     }
   } catch (error) {
     console.log("error", error);
