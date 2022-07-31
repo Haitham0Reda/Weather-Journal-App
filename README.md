@@ -14,7 +14,7 @@
 ## About the Project
 
 - This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI for a Weather-Journal App.
-- Start by setting up your project environment. Make sure Node is installed from the terminal. Install the packages ==Express==, ==Body-Parser==, and ==Cors== from the terminal and them include them your ==server.js== file.
+- Start by setting up your project environment. Make sure Node is installed from the terminal. Install the packages (==Express==), ==Body-Parser==, and ==Cors== from the terminal and them include them your ==server.js== file.
   Create a server running on the port of your choosing.
 - Create API credentials on [OpenWeatherMap](OpenWeatherMap.com).
 - You should use ==GET Route== for both Server Side & Client Side then use ==POST Route== to be able to add an entry to the project endpoint using a POST route setup on the server side and executed on the client side as an asynchronous function.
